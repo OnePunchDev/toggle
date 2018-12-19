@@ -1,0 +1,47 @@
+body {
+  margin: 0px;
+}
+
+
+img {
+  display: block;
+  position: absolute;
+  top: 50px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.buttons {
+
+}
+
+.filterbar {
+  position:fixed;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  background-color: gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.imagecontainer {
+  position: relative;
+}
+
+#emptyfloorplan {
+  z-index: 1;
+}
+
+#fireextinguisher {
+  z-index: 2;
+}
+
+#desks {
+  z-index: 3;
+}
+
+#brooms {
+  z-index: 4;
+}
