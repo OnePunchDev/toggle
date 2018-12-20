@@ -1,14 +1,17 @@
 window.addEventListener("DOMContentLoaded", function(event) {
-  document.getElementById("toggleall").addEventListener("click", toggleall);
+  document.getElementById("showall").addEventListener("click", showall);
   document.getElementById("togglefireextinguisher").addEventListener("click", togglefireextinguisher);
   document.getElementById("toggledesks").addEventListener("click", toggledesks);
   document.getElementById("togglebrooms").addEventListener("click", togglebrooms);
 });
 
-function toggleall() {
-  togglefireextinguisher();
-  toggledesks();
-  togglebrooms();
+function showall() {
+  var x = document.getElementById("fireextinguisher");
+  var y = document.getElementById("desks");
+  var z = document.getElementById("brooms");
+  x.style.display = "block";
+  y.style.display = "block";
+  z.style.display = "block";
 }
 
 
