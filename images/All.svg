@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="square_green.svg">
+   sodipodi:docname="All.svg">
   <defs
      id="defs2">
     <style
@@ -31,9 +31,9 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
      inkscape:cx="422.29944"
-     inkscape:cy="753.84269"
+     inkscape:cy="430.59388"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer4"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="716"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,7 +56,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="World"
-     style="display:none"
+     style="display:inline"
      transform="translate(46.877485,-10.064219)">
     <g
        style="display:inline;fill:none;stroke:#000000;stroke-linejoin:round"
@@ -1580,7 +1580,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="purple"
-     style="display:none"
+     style="display:inline"
      transform="translate(46.877485,-10.064219)">
     <path
        sodipodi:type="star"
@@ -1588,7 +1588,7 @@
        id="path56"
        sodipodi:sides="3"
        sodipodi:cx="167.94905"
-       sodipodi:cy="23.415512"
+       sodipodi:cy="23.415513"
        sodipodi:r1="9.2275743"
        sodipodi:r2="4.6137872"
        sodipodi:arg1="0.52359878"
@@ -1611,17 +1611,17 @@
        sodipodi:r2="4.6137872"
        sodipodi:r1="9.2275743"
        sodipodi:cy="183.55281"
-       sodipodi:cx="400.95535"
+       sodipodi:cx="400.95536"
        sodipodi:sides="3"
        id="path59"
        style="display:inline;opacity:1;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.19499999;stroke-opacity:1;paint-order:fill markers stroke"
        sodipodi:type="star" />
     <path
        sodipodi:type="star"
-       style="display:inline;opacity:1;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.19499999;stroke-opacity:1;paint-order:fill markers stroke"
+       style="display:inline;opacity:1;fill:#ff00ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.19499999;stroke-opacity:1;paint-order:fill markers stroke"
        id="path61"
        sodipodi:sides="3"
-       sodipodi:cx="110.70834"
+       sodipodi:cx="119.70411"
        sodipodi:cy="199.05609"
        sodipodi:r1="9.2275743"
        sodipodi:r2="4.6137872"
@@ -1630,7 +1630,7 @@
        inkscape:flatsided="true"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="m 118.69966,203.66988 -15.98263,0 7.99131,-13.84136 z"
+       d="m 127.69542,203.66988 -15.98262,0 7.99131,-13.84136 z"
        inkscape:transform-center-x="-1.8761905e-006"
        inkscape:transform-center-y="-2.3068942" />
     <path
@@ -1644,8 +1644,8 @@
        sodipodi:arg1="0.52359878"
        sodipodi:r2="4.6137872"
        sodipodi:r1="9.2275743"
-       sodipodi:cy="77.1185"
-       sodipodi:cx="69.415337"
+       sodipodi:cy="77.118499"
+       sodipodi:cx="69.41534"
        sodipodi:sides="3"
        id="path63"
        style="display:inline;opacity:1;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.19499999;stroke-opacity:1;paint-order:fill markers stroke"
@@ -1655,7 +1655,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="red"
-     style="display:none"
+     style="display:inline"
      transform="translate(46.877485,-10.064219)">
     <circle
        style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.19499999;stroke-opacity:1;paint-order:fill markers stroke"

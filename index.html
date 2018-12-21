@@ -10,20 +10,35 @@
 
 <body>
 
-  <div class="filterbar">
-    <div class="buttons">
-      <button id="showall">Show All</button>
-      <button id="togglefireextinguisher">Toggle Fire Extinguisher</button>
-      <button id="toggledesks">Toggle Desks</button>
-      <button id="togglebrooms">Toggle Brooms</button>
+  <div id="filterbar">
+    <div class="filtergroup">
+        <button id="toggleall">Toggle</button>
+    </div>
+    <div class="filtergroup">
+        <input type="checkbox" id="showredcircle" name="showredcircle" checked>
+        <label for="showredcircle">Red Circle</label>
+    </div>
+    <div class="filtergroup">
+        <input type="checkbox" id="showgreensquare" name="showgreensquare" checked>
+        <label for="showgreensquare">Green square</label>
+    </div>
+    <div class="filtergroup">
+        <input type="checkbox" id="showpurpletriangle" name="showpurpletriangle" checked>
+        <label for="showpurpletriangle">Purple square</label>
     </div>
   </div>
+
   <div class="imagecontainer">
-    <img id="emptyfloorplan" src="images/map.svg" alt="empty floorplan">
-    <img id="fireextinguisher" src="images/red_circle.svg" alt="fire extinguisher">
-    <img id="desks" src="images/square_green.svg" alt="desks">
-    <img id="brooms" src="images/triangle_purple.svg" alt="brooms">
+      <div>
+          <img id="world" src="images/world.svg" alt="map of the world">
+      </div>
+      <div id="mapitems">
+          <img id="redcircle" src="images/red_circle.svg" alt="red circle">
+          <img id="greensquare" src="images/square_green.svg" alt="green square">
+          <img id="purpletriangle" src="images/triangle_purple.svg" alt="purple triangle">
+      </div>
   </div>
+ 
 
 </body>
 

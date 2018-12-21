@@ -6,42 +6,52 @@ body {
 img {
   display: block;
   position: absolute;
-  top: 50px;
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.buttons {
-
-}
-
-.filterbar {
-  position:fixed;
   width: 100%;
-  text-align: center;
-  margin-top: 0px;
-  background-color: gray;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 100px;
 }
 
-.imagecontainer {
+.filtergroup {
+  display: inline-block;
+}
+
+#imagecontainer {
   position: relative;
+}
+
+#toggleall {
+  background-color: #363636;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#toggleall:hover {
+  background-color: #363636;
 }
 
 #emptyfloorplan {
   z-index: 1;
 }
 
-#fireextinguisher {
+#redcircle {
   z-index: 2;
 }
 
-#desks {
+#greensquare {
   z-index: 3;
 }
 
-#brooms {
+#purpletriangle {
   z-index: 4;
+}
+
+#filterbar {
+  position:fixed;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  background-color: #FF6600;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
