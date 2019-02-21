@@ -3,43 +3,45 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Floor plan</title>
+  <title>World || POI</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="script/toggle.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-
-  <div id="filterbar">
-    <div class="filtergroup">
-        <button id="toggleall">Toggle</button>
-    </div>
-    <div class="filtergroup">
-        <input type="checkbox" id="showredcircle" name="showredcircle" checked>
-        <label for="showredcircle">Red Circle</label>
-    </div>
-    <div class="filtergroup">
-        <input type="checkbox" id="showgreensquare" name="showgreensquare" checked>
-        <label for="showgreensquare">Green square</label>
-    </div>
-    <div class="filtergroup">
-        <input type="checkbox" id="showpurpletriangle" name="showpurpletriangle" checked>
-        <label for="showpurpletriangle">Purple square</label>
-    </div>
-  </div>
-
-  <div class="imagecontainer">
-      <div>
-          <img id="world" src="images/world.svg" alt="map of the world">
+  <section id="menu">
+    <div id="filtercontainer">
+      <div class="button">
+        <button id="toggle">Toggle</button>
       </div>
-      <div id="mapitems">
-          <img id="redcircle" src="images/red_circle.svg" alt="red circle">
-          <img id="greensquare" src="images/square_green.svg" alt="green square">
-          <img id="purpletriangle" src="images/triangle_purple.svg" alt="purple triangle">
+      <div class="filtergroup">
+        <input type="checkbox" id="layer1checkbox" name="layer1checkbox" checked>
+        <label for="layer1checkbox">Red circle</label>
       </div>
-  </div>
- 
+      <div class="filtergroup">
+        <input type="checkbox" id="layer2checkbox" name="layer2checkbox" checked>
+        <label for="layer2checkbox">Green square</label>
+      </div>
+      <div class="filtergroup">
+        <input type="checkbox" id="layer3checkbox" name="layer3checkbox" checked>
+        <label for="layer3checkbox">Purple triangle</label>
+      </div>
+    </div>
+  </section>
 
+  <section id="layers">
+    <div>
+      <img class="layer" id="layer0" src="images/world.svg" alt="map of the world">
+    </div>
+    <div id="layercontainer">
+      <img class="layer" id="layer1" src="images/red_circle.svg" alt="red circle">
+      <img class="layer" id="layer2" src="images/square_green.svg" alt="green square">
+      <img class="layer" id="layer3" src="images/triangle_purple.svg" alt="purple triangle">
+    </div>
+  </section>
+
+
+  <script src="script/toggle.js"></script>
 </body>
 
 </html>

@@ -1,69 +1,90 @@
+var layercontainer, filtercontainer, layerlist, checkboxlist
 
 window.addEventListener("DOMContentLoaded", function(event) {
-  var toggleallcbox = document.getElementById("toggleall")
-  var redcirclecbox = document.getElementById("showredcircle")
-  var greensquarecbox = document.getElementById("showgreensquare")
-  var purpletrianglecbox = document.getElementById("showpurpletriangle")
-  toggleallcbox.addEventListener("click", toggleall);
-  redcirclecbox.addEventListener("change", function(){show("redcircle", redcirclecbox)});
-  greensquarecbox.addEventListener("change", function(){show("greensquare", greensquarecbox)});
-  purpletrianglecbox.addEventListener("change", function(){show("purpletriangle", purpletrianglecbox)});
+  let togglecheckbox = document.getElementById("toggle")
+  let layer1checkbox = document.getElementById("layer1checkbox")
+  let layer2checkbox = document.getElementById("layer2checkbox")
+  let layer3checkbox = document.getElementById("layer3checkbox")
+  togglecheckbox.addEventListener("click", toggle);
+  layer1checkbox.addEventListener("change", function() {
+    show("layer1", layer1checkbox)
+  });
+  layer2checkbox.addEventListener("change", function() {
+    show("layer2", layer2checkbox)
+  });
+  layer3checkbox.addEventListener("change", function() {
+    show("layer3", layer3checkbox)
+  });
+
+
+  populateLayerList("layercontainer", '.layer');
+  populateCheckboxList("filtercontainer", 'input');
 });
 
-var hidden = false;
+function populateLayerList(container, layers) {
+  layercontainer = document.getElementById(container)
+  layerlist = layercontainer.querySelectorAll(layers)
+}
 
-function toggleall() {
-  if (hidden == false) {
+function populateCheckboxList (container, checkboxes) {
+  filtercontainer = document.getElementById(container)
+  checkboxlist = filtercontainer.querySelectorAll(checkboxes)
+}
+
+function toggle() {
+  isshown();
+  if (isshown() === true) {
     hideall();
-    hidden = true;
   } else {
     showall();
-    hidden = false;
   }
 }
 
+function isshown() {
+  let i = 0
+  let shown = false
+  do {
+    if ( window.getComputedStyle(layerlist[i], null).getPropertyValue("display") === 'block') {
+      shown = true;
+    }
+    ++i;
+  }
+  while (i < layerlist.length && shown !== true);
+  return shown;
+}
+
 function hideall() {
-  var mapitems = document.getElementById("mapitems")
-  var imagelist = mapitems.querySelectorAll('img')
-  for (let i = 0; i < imagelist.length ; ++i) {
-    imagelist[i].style.display = "none";
+  for (let i = 0; i < layerlist.length; ++i) {
+    layerlist[i].classList.add("hide");
   }
   uncheck();
 }
 
 function showall() {
-  var mapitems = document.getElementById("mapitems")
-  var imagelist = mapitems.querySelectorAll('img')
-  for (let i = 0; i < imagelist.length ; ++i) {
-    imagelist[i].style.display = "block";
+  for (let i = 0; i < layerlist.length; ++i) {
+    layerlist[i].classList.remove("hide");
   }
   check();
 }
 
 function uncheck() {
-  var filterbar = document.getElementById("filterbar")
-  var checkboxlist = filterbar.querySelectorAll('input')
-  for (let i = 0; i < checkboxlist.length ; ++i) {
-      checkboxlist[i].checked = false;
+  for (let i = 0; i < checkboxlist.length; ++i) {
+    checkboxlist[i].checked = false;
   }
 }
 
 function check() {
-  var filterbar = document.getElementById("filterbar")
-  var checkboxlist = filterbar.querySelectorAll('input')
-  for (let i = 0; i < checkboxlist.length ; ++i) {
-      checkboxlist[i].checked = true;
+  for (let i = 0; i < checkboxlist.length; ++i) {
+    checkboxlist[i].checked = true;
   }
 }
 
 function show(image, checkbox) {
-  var x = document.getElementById(image)
+  let x = document.getElementById(image)
   if (ischecked(checkbox) === true) {
-    x.style.display = "block";
-    hidden = false;
+    x.classList.remove("hide");
   } else {
-    x.style.display = "none";
-    hidden = true;
+    x.classList.add("hide");
   }
 }
 
@@ -74,4 +95,3 @@ function ischecked(checkbox) {
     return false;
   }
 }
-
